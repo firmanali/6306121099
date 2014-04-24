@@ -9,9 +9,10 @@ public class Jurnal1 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Input jumlah digit: ");
         n=sc.nextInt();
+        x=0;
         for (int i=1; i<=n;i++){
-            //x=f.hitungFibonacci(n);
-            System.out.print(f.hitungFibonacci(i)+" ");
+            x=f.hitungFibonacci(i)+x;
         }
+        System.out.println(x);
     }
 }
